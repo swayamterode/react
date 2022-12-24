@@ -126,7 +126,7 @@ We can Simply add an h1 tag to create our first Hello World Program.
 </html>
 ```
 
-[Code 🔗](../1.Inception/HelloWorld.html)
+[Code 🔗](./1.Inception/1.HelloWorld.html)
 
 </details>
 
@@ -151,7 +151,7 @@ Easy-to-understand code with comments
 </body>
 ```
 
-[Code 🔗](../1.Inception/2.HelloWorldUsingJs.html)
+[Code 🔗](./1.Inception/2.HelloWorldUsingJs.html)
 
 </details>
 
@@ -162,28 +162,29 @@ Build your first `Hello World` program using `React`
 <details>
 
 ```html
-  <body>
-    <div id="root">Not Rendered</div>
+<body>
+  <div id="root">Not Rendered</div>
 
-    <script
-      crossorigin
-      src="https://unpkg.com/react@18/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
 
-    <script>
-      const heading = React.createElement("h1", {}, "Hello Wolrd"); //this will override everything inside the root!, means anything written will get overwritten
-      //React element is an Object 💯
-      const root = ReactDOM.createRoot(document.getElementById("root")); //whatever you passing becomes the root
-      //passing react element inside the root
-      root.render(heading); //just like appednChild()in JS!
-    </script>
-
-  </body>
+  <script>
+    const heading = React.createElement("h1", {}, "Hello Wolrd"); //this will override everything inside the root!, means anything written will get overwritten
+    //React element is an Object 💯
+    const root = ReactDOM.createRoot(document.getElementById("root")); //whatever you passing becomes the root
+    //passing react element inside the root
+    root.render(heading); //just like appednChild()in JS!
+  </script>
+</body>
 ```
+
+[Code 🔗](./1.Inception/src/script.js)
 
 </details>
 
