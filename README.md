@@ -160,6 +160,8 @@ Easy-to-understand code with comments
 Build your first `Hello World` program using `React`
 
 <details>
+
+```html
   <body>
     <div id="root">Not Rendered</div>
 
@@ -181,6 +183,8 @@ Build your first `Hello World` program using `React`
     </script>
 
   </body>
+```
+
 </details>
 
   </details>
