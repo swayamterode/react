@@ -1,10 +1,6 @@
-# React
+# Chapter 1 Inception
 
-## Chapter 1 Inception
-
-<details>
-
-### Theory
+## Theory
 
 - What is Emmet?
 
@@ -44,18 +40,19 @@
 ---
 
 - What is difference between react.development.js and react.production.js files via CDN?
-  -  The development build is used - as the name suggests - for development reasons. 
+
+  - The development build is used - as the name suggests - for development reasons.
 
   - The production build, on the other hand, runs in production mode which means this is the code running on your client's machine.
-  
+
 ---
 
 - What are async and defer? - [see my Youtube video ;)]
-  
+
   - In practice, defer is used for scripts that need the whole DOM, and/or their relative execution order is important.
 
   - And async is used for independent scripts, like counters or ads. And their relative execution order does not matter.
-  
+
 ---
 
 JS DOM Fundamentals
@@ -112,14 +109,14 @@ We can Simply add an h1 tag to create our first Hello World Program.
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-      <!-- Simply use h1 tag -->
+    <!-- Simply use h1 tag -->
     <h1>Hello World</h1>
   </body>
 </html>
@@ -139,9 +136,9 @@ Easy-to-understand code with comments
 
 ```HTML
 <body>
-    <!-- JS is written inside script tag 👍 -->
+  <!-- JS is written inside script tag 👍 -->
   <script>
-      const heading = document.createElement(""); //creating h1 tag!
+    const heading = document.createElement(""); //creating h1 tag!
     heading.innerHTML = "Hello World"; // adding content to the h1 tag!
     //now we need to push this heading into the div
     const value = document.getElementById("root");
@@ -157,5 +154,30 @@ Easy-to-understand code with comments
 ---
 
 Build your first `Hello World` program using `React`
+
+<details>
+
+```html
+<body>
+  <div id="root">Not Rendered</div>
+
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+
+  <script>
+    const heading = React.createElement("h1", {}, "Hello Wolrd"); //this will override everything inside the root!, means anything written will get overwritten
+    //React element is an Object 💯
+    const root = ReactDOM.createRoot(document.getElementById("root")); //whatever you passing becomes the root
+    //passing react element inside the root
+    root.render(heading); //just like appednChild()in JS!
+  </script>
+</body>
+```
 
   </details>
