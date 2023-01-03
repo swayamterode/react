@@ -1,0 +1,26 @@
+{
+  "name": "2.igniting_our_app",
+  "version": "1.0.0",
+  "description": "Chapter 2 Igniting our App!",
+  "main": "index.hmtl",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swayamterode/react.git"
+  },
+  "author": "Swayam Terode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swayamterode/react/issues"
+  },
+  "homepage": "https://github.com/swayamterode/react#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
