@@ -100,6 +100,8 @@ Our app has a dependency on the `parcel`, it also has a dependency on the other 
 
 We know we can inject React using `CDN` which is quite tedious and it is also easier to fetch react from our server rather than CDN.
 
+React also comes as a package.
+
 Installing **react**
 
 ``` shell
@@ -108,7 +110,7 @@ npm i react
 
 Installing **react-dom**
 
-``` shell
+```shell
 npm i react-dom
 ```
 
@@ -128,6 +130,36 @@ npx parcel entry point
 
 run:
 
-``` shell
+```shell
 npx parcel index.html
 ```
+
+npx means **execute** using npm
+
+Now since we have removed the CDN so need to import `react` and `react-dom/client` into the `script.js`
+
+Now the important thing to do in `<script></script>` in [index.html](./index. HTML) is we need to declare the type of the script. To react work we need to make the type `module` **because browser scripts cannot have imports or exports.**
+
+Anything which can be generated on server can be pushed to .gitingnore
+
+> We have our package manager who handles and take care of transitive dependency of code!
+
+When we are building a production-ready app we need to take care of so many things
+
+Parcel specialty:
+
+- Creates a Server
+- Bundling
+- HMR - Hot Module Replacement
+- Minification
+- Cleaning Code
+- Dev and Production build
+- Super fast build Algorithm
+- Image Optimization
+- Caching while Development (makes the build fast)
+- Compression
+- HTTPS on dev
+- PORT number
+- Consistent Hashing Algorithm
+- Zero Configure needed
+- Browser list
