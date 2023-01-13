@@ -1,67 +1,84 @@
 # React
 
-## Chapter 1 Inception
+<details>
+
+<summary>Chapter 1 Inception</summary>
+
+
+## Theory
 
 <details>
 
-### Theory
+<summary>What is Emmet?</summary>
 
-- What is Emmet?
+- This is a shortcut that generates a large amount of code on writing some text/key in text editors.
+- For example, if you type `doc` in VS Code this will generate an entire HTML boiler Plot for you. This is similar to the snippet.
 
-  - This is a shortcut that generates a large amount of code on writing some text/key in text editors.
-  - For example, if you type `doc` in VS Code this will generate an entire HTML boiler Plot for you. This is similar to the snippet.
+</details>
 
-  ***
+<details>
 
-- Difference between a Library and a Framework?
-  - The simple one difference
-    | Framework | Library |
-    | :--------------------------------------------------------: | :----------------: |
-    | It provides ready-to-use tools for fast application dev | Libraries do not |
+<summary>Difference between a Library and a Framework?</summary>
 
----
+- The simple one difference
+  | Framework | Library |
+  | :--------------------------------------------------------: | :----------------: |
+  | It provides ready-to-use tools for fast application dev | Libraries do not |
 
-- What is CDN? Why do we use it?
-  - `CDN` Content Delivery Network. It is a system of distributed systems that deliver content based on the user's geographical location.
-  - Why do we use it?
-    - This is used to reduce the latency of content delivery and it improves the performance of the website.
+</details>
 
----
+<details>
 
-- Why is React known as React?
-  - React has an interpretation of chemical reactions, with the atomic logo, atoms participate in chemical reactions. It can adapt to the changes accordingly.
+<summary>What is CDN? Why do we use it?</summary>
 
----
+- `CDN` stand for **Content Delivery Network**. It is a system of distributed systems that deliver content based on the user's geographical location.
+- Why do we use it?
+  - This is used to reduce the latency of content delivery and it improves the performance of the website.
+
+</details>
+
+<details>
+
+<summary>Why is React known as React?</summary>
+
+- React is named React because of its ability to react to changes in data. React is called React because it was designed to be a declarative, efficient, and flexible JavaScript library for building user interfaces. The name "React" was chosen because the library was designed to allow developers to "react" to changes in state and data within an application, and to update the user interface in a declarative and efficient manner. React is a JavaScript-based UI development library. Facebook and an open-source developer community run it.
 
 - What is cross-origin in the script tag?
   - The crossorigin attribute sets the mode of the request to an HTTP CORS Request. Web pages often make requests to load resources on other servers. Here is where CORS comes in. A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.
 
----
-
-- What is the difference between React and ReactDOM
-  - `React` is used to `create view` and `ReactDOM` is responsible for actually `rendering UI` in the browser.
-
----
-
-- What is difference between react.development.js and react.production.js files via CDN?
-
-  - The development build is used - as the name suggests - for development reasons.
-
-  - The production build, on the other hand, runs in production mode which means this is the code running on your client's machine.
-
----
-
-- What are async and defer? - [see my Youtube video ;)]
-
-  - In practice, defer is used for scripts that need the whole DOM, and/or their relative execution order is important.
-
-  - And async is used for independent scripts, like counters or ads. And their relative execution order does not matter.
-
----
-
-JS DOM Fundamentals
+</details>
 
 <details>
+
+<summary>What is the difference between React and ReactDOM?</summary>
+
+- `React` is used to `create view` and `ReactDOM` is responsible for actually `rendering UI` in the browser.
+
+</details>
+
+<details>
+
+<summary>What is difference between react.development.js and react.production.js files via CDN?</summary>
+
+- The development build is used - as the name suggests - for development reasons.
+
+- The production build, on the other hand, runs in production mode which means this is the code running on your client's machine.
+
+</details>
+
+<details>
+
+<summary>What are async and defer?</summary>
+
+- In practice, defer is used for scripts that need the whole DOM, and/or their relative execution order is important.
+
+- And async is used for independent scripts, like counters or ads. And their relative execution order does not matter.
+
+</details>
+
+<details>
+
+<summary>JS DOM Fundamentals</summary>
 
 How to create an element?
 
@@ -83,18 +100,6 @@ How to push the element inside the id?
 
 ## Coding
 
-- **Set up**
-
-  - **VS Code**
-  - **Chrome**
-  - **Extensions** for and VS Code
-    - `dzhavat.bracket-pair-toggler`
-    - `rodrigovallades.es7-react-js-snippets`
-    - `dbaeumer.vscode-eslint`
-    - `esbenp.prettier-vscode`
-    - `eamodio.gitlens`
-    - `yandeu.five-server`
-
 - Build your first `Hello World` program using
   - Just HMTL
   - Using **JS** to manipulate the **DOM**
@@ -104,45 +109,45 @@ How to push the element inside the id?
     - Create nested React Elements
     - Use root.render
 
-Build your first `Hello World` program using Just `HTML`
-
 <details>
+
+<summary>Build your first `Hello World` program using Just `HTML`</summary>
+
+<br>
 
 We can Simply add an h1 tag to create our first Hello World Program.
 
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-      <!-- Simply use h1 tag -->
+    <!-- Simply use h1 tag -->
     <h1>Hello World</h1>
   </body>
 </html>
 ```
 
-[Code 🔗](./1.Inception/1.HelloWorld.html)
+[Code 🔗](../1.Inception/HelloWorld.html)
 
 </details>
 
----
-
-Build your first `Hello World` program using`JS` to manipulate the `DOM`
-
 <details>
 
-Easy-to-understand code with comments
+<summary>Build your first `Hello World` program using`JS` to manipulate the `DOM`</summary>
+
+<br>
 
 ```HTML
 <body>
-    <!-- JS is written inside script tag 👍 -->
+  <!-- JS is written inside script tag 👍 -->
   <script>
-      const heading = document.createElement(""); //creating h1 tag!
+    const heading = document.createElement(""); //creating h1 tag!
     heading.innerHTML = "Hello World"; // adding content to the h1 tag!
     //now we need to push this heading into the div
     const value = document.getElementById("root");
@@ -151,15 +156,15 @@ Easy-to-understand code with comments
 </body>
 ```
 
-[Code 🔗](./1.Inception/2.HelloWorldUsingJs.html)
+[Code 🔗](../1.Inception/2.HelloWorldUsingJs.html)
 
 </details>
 
----
-
-Build your first `Hello World` program using `React`
-
 <details>
+
+<summary>Build your first `Hello World` program using `React`</summary>
+
+<br>
 
 ```html
 <body>
@@ -184,8 +189,6 @@ Build your first `Hello World` program using `React`
 </body>
 ```
 
-[Code 🔗](./1.Inception/src/script.js)
-
 </details>
 
-  </details>
+</details>
