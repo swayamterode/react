@@ -110,7 +110,7 @@ npm i react
 
 Installing **react-dom**
 
-```shell
+``` shell
 npm i react-dom
 ```
 
@@ -140,7 +140,7 @@ Now since we have removed the CDN so need to import `react` and `react-dom/clien
 
 Now the important thing to do in `<script></script>` in [index.html](./index. HTML) is we need to declare the type of the script. To react work we need to make the type `module` **because browser scripts cannot have imports or exports.**
 
-Anything which can be generated on server can be pushed to .gitingnore
+Anything which can be generated on the server can be pushed to .gitingnore
 
 > We have our package manager who handles and take care of transitive dependency of code!
 
@@ -163,3 +163,9 @@ Parcel specialty:
 - Consistent Hashing Algorithm
 - Zero Configure needed
 - Browser list
+
+What is `dist`?
+
+When we write npx parcel index.html it just creates the development build for us and it hosts on the server.
+
+When I tell the parcel to make a production build I tell it using the build command, It will minify your file. The parcel will push this build in the dist folder.
