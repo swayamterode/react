@@ -169,3 +169,20 @@ What is `dist`?
 When we write npx parcel index.html it just creates the development build for us and it hosts on the server.
 
 When I tell the parcel to make a production build I tell it using the build command, It will minify your file. The parcel will push this build in the dist folder.
+
+`Q`. How to remove the console logs form the console?
+
+With the help of he [Babel plugin tranform remove console](https://babeljs.io/docs/en/babel-plugin-transform-remove-console/)
+
+```
+npm install babel-plugin-transform-remove-console --save-dev
+```
+
+Installing the package is not enough we need to configure the package. Make a `.babelrc` file and add the script there that's it we are done!
+
+```shell
+{
+  "plugins": [["transform-remove-console", { "exclude": ["error", "warn"] }]]
+}
+
+```
