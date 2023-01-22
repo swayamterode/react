@@ -1,0 +1,3 @@
+# Laying the Foundation
+
+## Coding 
