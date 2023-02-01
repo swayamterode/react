@@ -1,4 +1,4 @@
-#title {
+#logo {
   margin-left: 10px;
 }
 .header {
@@ -14,4 +14,21 @@
 }
 .nav-items > ul > li {
   padding: 10px;
+}
+
+.card {
+  width: 200px;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 30px;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.resturant-list{
+  display: flex;
+  flex-wrap: wrap;
 }
