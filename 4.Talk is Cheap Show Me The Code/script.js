@@ -2153,7 +2153,7 @@ const restaurantList = [
 // };
 
 // Cool Developer things 🔥
-//destructing the props! instead of passing the props we destructe the props and pass in as restaurant .. destructing on the fly!
+//destructing the props! instead of passing the props we destructure the props and pass them in as a restaurant .. destructing on the fly!
 // const RestrauntCard = ({ restaurant }) => {
 //   return (
 //     <div className="card">
@@ -2173,7 +2173,7 @@ const restaurantList = [
 //   );
 // };
 
-// Making the code even more cleaner 🔥 🚒
+// Making the code, even more, cleaner 🔥 🚒
 // const RestrauntCard = ({ restaurant }) => {
 //destructing the object!
 //   const { name, cuisines, cloudinaryImageId, maxDeliveryTime } =
@@ -2262,7 +2262,7 @@ const Footer = () => {
   );
 };
 
-// 🚨 💥 React.Fragement is a component which is exported by React
+// 🚨 💥 React.Fragment is a component that is exported by React
 //React JSX has only one parent!
 
 //Inline CSS for JSX
@@ -2278,8 +2278,8 @@ const Footer = () => {
 // );
 
 // OR
-// Both are same React.Fragement or  empty tags <> </>
-// But when when we have to pass the styling component inside our react then we do it with the help of object because inside the div we can
+// Both are the same React.Fragment or  empty tags <> </>
+// But when we have to pass the styling component inside our react then we do it with the help of the object because inside the div we can
 // write any piece of JS
 // const Body = (
 //   <>
@@ -2298,7 +2298,7 @@ const AppLayout = () => {
   );
 };
 
-//rendering the fucntional Component
-// to render the fucntional Component is done by wrapping the functional Component in  "< NameofTag/>"
+//rendering the functional Component
+// to render the functional Component is done by wrapping the functional Component in  "< NameofTag/>"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<AppLayout />);
