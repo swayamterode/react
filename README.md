@@ -190,6 +190,8 @@ We can Simply add an h1 tag to create our first Hello World Program.
 
 </details>
 
+---
+
 </details>
 
 <details>
@@ -407,6 +409,8 @@ Output:
 
 </details>
 
+---
+
 </details>
 
 <details>
@@ -562,7 +566,10 @@ const RenderHeaderComponent = () => {
 
 - [Code](./3.Laying%20the%20Foundation/script.js)
 
+---
+
 </details>
+
 
 <details>
 
@@ -750,6 +757,8 @@ function App() {
 ## Coding
 
 - [Code](./4.Talk%20is%20Cheap%20Show%20Me%20The%20Code/script.js) (Heavily Commented)
+
+---
 
 </details>
 
