@@ -1,10 +1,10 @@
-# Chapter 4: Talk is cheap show me the code
+# Chapter 4: Talk is cheap to show me the code
 
 ## Theory
 
 ### Q1: Is JSX mandatory for REACT?
 
-- No `JSX` is not mandatory for REACT! The same which can be done by JSX can also be done with plain JavaScript. We can use React.CreateElement() instead of `JSX` but we prefer to use JSX beacause of it enchances readibility and reduces code complexity.
+- No `JSX` is not mandatory for REACT! The same which can be done by JSX can also be done with plain JavaScript. We can use React.CreateElement() instead of `JSX` but we prefer to use JSX because it enhances readability and reduces code complexity.
 
 ---
 
@@ -16,7 +16,7 @@
 
 ### Q3: `{TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>}` in JSX
 
-- `{TitleComponent}` - is a just normal variable which is similar to React.createElement. Anything enclosed inside { ... } is just a peice of JS.
+- `{TitleComponent}` - is a just normal variable which is similar to React.createElement. Anything enclosed inside { ... } is just a piece of JS.
 - `{<TitleComponent/>}` - this return the functional component JSX value
 - `{<TitleComponent></TitleComponent>}` - it is equivalent to `{<TitleComponent/>}` if there is no children
 
@@ -64,8 +64,8 @@ Both of these are having the same meaning
 
 ### Q6: What is Reconciliation in React?
 
-- `Reconciliation` is a process through which the browser updates it's DOM. This is done with the help of `diffing algorithm`. Whenever the root elements have different types, React will tear down the old tree and build the new tree from scratch. When tearing down a tree, old DOM nodes are destroyed.
-- React stores a copy of browser DOM known as virtual DOM. The comparisiom is done by `diffing algorithm` between `Virtual DOM` and `Real DOM` it finds out the changed node and updated only the changed part and rest nodes are kept as it is. This comparison is known as _Reconciliation_.
+- `Reconciliation` is a process through which the browser updates its DOM. This is done with the help of a `diffing algorithm`. Whenever the root elements have different types, React will tear down the old tree and build a new tree from scratch. When tearing down a tree, old DOM nodes are destroyed.
+- React stores a copy of browser DOM is known as virtual DOM. The comparison is done by `diffing algorithm` between `Virtual DOM` and `Real DOM` it finds out the changed node and updates only the changed part and the rest nodes are kept as it is. This comparison is known as _Reconciliation_.
 
 [read more here 🚀](https://reactjs.org/docs/reconciliation.html)
 
@@ -73,7 +73,7 @@ Both of these are having the same meaning
 
 ### Q7: What is React Fiber?
 
-- React Fiber is a concept of ReactJS that is used to render a system faster, smoother and smarter. The Fiber reconciler, which became the default reconciler for React 16 and above, is a complete rewrite of React’s reconciliation algorithm to solve some long-standing issues in React. Because Fiber is asynchronous, React can:
+- React Fiber is a concept of ReactJS that is used to render a system faster, smoother, and smarter. The Fiber reconciler, which became the default reconciler for React 16 and above, is a complete rewrite of React’s reconciliation algorithm to solve some long-standing issues in React. Because Fiber is asynchronous, React can:
 
   - Pause, resume, and restart rendering work on components as new updates come in
   - Reuse previously completed work and even abort it if not needed
@@ -91,19 +91,19 @@ Example :
 
 ---
 
-### Q9: Can we use index as keys in React?
+### Q9: Can we use the index as keys in React?
 
-- Yes, we can use the index as keys, but it is not considered as a good practice to use them because if the order of items may change. This can negatively impact performance and may cause issues with component state. Keys are taken from each object which is being rendered. There might be a possibility that if we modify the incoming data react may render them in unusual order.
+- Yes, we can use the index as keys, but it is not considered good practice to use them because the order of items may change. This can negatively impact performance and may cause issues with the component state. Keys are taken from each object which is being rendered. There might be a possibility that if we modify the incoming data react may render them in an unusual order.
 
 ---
 
-### Q10: What is props in React? Ways to.
+### Q10: What are props in React? Ways to.
 
-- props stands for properties. props are used in React to pass data from one component to another
+- props stand for properties. props are used in React to pass data from one component to another
 
 Example:
 
-```js
+``` js
 function App() {
   return (
     <div className="App">
@@ -115,9 +115,9 @@ function App() {
 
 ---
 
-### Q11: What is Config Driven UI?
+### Q11: What is Config-Driven UI?
 
-- Config Driven UI is based on the configurations the app receives. Like the offers in India are different during the diwali sale but are not same in the other parts of the world.
+- Config Driven UI is based on the configurations the app receives. The offers in India are different during the Diwali sale but are not the same in the other parts of the world.
 - This is known as `Config Driven UI`.
 
 ---
@@ -132,7 +132,7 @@ function App() {
 | There is too much memory wastage                                                                                          | No memory wastage                                                                       |
 | It updates Slow                                                                                                           | It updates fast                                                                         |
 | It can directly update HTML                                                                                               | It can’t update HTML directly                                                           |
-| Creates a new DOM if the element updates.                                                                                 | Update the JSX if the element update                                                    |
+| Creates a new DOM if the element updates.                                                                                 | Update the JSX if the element is update                                                    |
 | It allows us to directly target any specific node (HTML element) It can produce about 200,000 Virtual DOM Nodes / Second. | It represents the UI of your application It is only a virtual representation of the DOM |
 
 </div>
