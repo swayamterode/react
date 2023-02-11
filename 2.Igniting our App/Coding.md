@@ -100,7 +100,7 @@ Output:
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  //   this is how we can use the browserlist
+  //   this is how we can use the browser list
   "browserlist": ["last 10 versions"]
 }
 ```

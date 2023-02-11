@@ -24,7 +24,7 @@ When we run `npm init` in the terminal You will be prompted to enter information
 
 Here is the setup :
 
-<img src= "../2.Igniting_our_App/src/img/1.npm init.png" height = "50%" width = "100%">
+<img src= "../2.Igniting our App/src/img/1.npm init.png" height = "50%" width = "100%">
 
 You can skip this by running `npm init -y`
 
@@ -72,7 +72,7 @@ As soon as the parcel is installed we get new files
 - package-lock.json
 - node_modules
 
-<img src= "../2.Igniting_our_App/src/img/2.i parcel.png" height = "50%" width = "30%">
+<img src= "../2.Igniting our App/src/img/2.i parcel.png" height = "50%" width = "30%">
 
 <br>
 
@@ -92,7 +92,7 @@ Our app has a dependency on the `parcel`, it also has a dependency on the other 
 
 <div align = "center">
 
-<img src= "../2.Igniting_our_App/src/img/3.package-lock.png" height = "50%" width = "70%">
+<img src= "../2.Igniting our App/src/img/3.package-lock.png" height = "50%" width = "70%">
 
 </div>
 
@@ -104,19 +104,19 @@ React also comes as a package.
 
 Installing **react**
 
-``` shell
+```shell
 npm i react
 ```
 
 Installing **react-dom**
 
-``` shell
+```shell
 npm i react-dom
 ```
 
 Note: **i** == **instal**
 
-<img src= "../2.Igniting_our_App/src/img/4.i react.png" height = "50%" width = "70%">
+<img src= "../2.Igniting our App/src/img/4.i react.png" height = "50%" width = "70%">
 
 ## Igniting our App
 
@@ -124,7 +124,7 @@ We will ignite our app with the help of parcel with the command:
 
 Syntax:
 
-``` shell
+```shell
 npx parcel entry point
 ```
 
@@ -170,9 +170,9 @@ When we write npx parcel index.html it just creates the development build for us
 
 When I tell the parcel to make a production build I tell it using the build command, It will minify your file. The parcel will push this build in the dist folder.
 
-`Q`. How to remove the console logs form the console?
+`Q`. How to remove the console logs from the console?
 
-With the help of he [Babel plugin tranform remove console](https://babeljs.io/docs/en/babel-plugin-transform-remove-console/)
+With the help of the [Babel plugin transform remove console](https://babeljs.io/docs/en/babel-plugin-transform-remove-console/)
 
 ```
 npm install babel-plugin-transform-remove-console --save-dev
