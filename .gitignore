@@ -25,6 +25,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Projects files
+
 /2.Igniting our App/.parcel-cache
 /2.Igniting our App/dist
 /2.Igniting our App/node_modules
@@ -40,3 +42,7 @@ Temporary Items
 /5.Let's Get Hooked/.parcel-cache
 /5.Let's Get Hooked/dist
 /5.Let's Get Hooked/node_modules
+
+/6.Exploring the World/.parcel-cache
+/6.Exploring the World/dist
+/6.Exploring the World/node_modules
