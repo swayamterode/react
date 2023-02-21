@@ -886,3 +886,31 @@ const AppLayout = () => {
 </details>
 
 Last updated : 11th Feb 23 ✅
+
+### Facing issues on local?
+
+<details>
+
+
+<br>
+
+1. Install `npm`
+
+```
+npm init
+```
+
+1. Install `Parcel`
+
+```
+npm i -D parcel
+```
+
+1. Open Terminal in VSCode write:
+
+```
+npm start
+```
+
+</details>
+
